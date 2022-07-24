@@ -10,10 +10,17 @@
 	<body>
 		<div id="app">
 			<h1>QR Code Generator</h1>
-			<label for="">Add your QR Code Info Below</label><br />
-			<input type="text" id="qrInfo" /><br />
-			<button onclick="getQrc()">Submit</button><br />
+			<div id="generate">
+				<label for="">Add your QR Code Info Below</label><br />
+				<input type="text" id="qrInfo" /><br />
+				<button id="submit" onclick="getQrc()">Submit</button><br />
+			</div>
+
 			<div id="qrcode"></div>
+			<button style="display: none" id="download">Download</button>
+			<button style="display: none" onclick="retry()" id="retry">
+				Make Another
+			</button>
 			<h5>Copyright SmartLedger Solutions 2022.</h5>
 		</div>
 
