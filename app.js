@@ -5,10 +5,12 @@ const getQrc = () => {
 		return;
 	}
 	new QRCode(document.getElementById("qrcode"), `${qrInfo}`);
+	let canvas = can.childNodes[0];
 	document.getElementById("qrcode").style.display = "";
 	document.getElementById("download").style.display = "";
 	document.getElementById("submit").style.display = "none";
 	document.getElementById("retry").style.display = "";
+	console.log(canvas);
 };
 
 let can = document.getElementById("qrcode");
@@ -17,6 +19,7 @@ console.log(can);
 
 document.getElementById("download").addEventListener("click", function (e) {
 	let canvas = can.childNodes[0];
+
 	// let ctx = canvas.getContext("2d");
 	console.log(canvas);
 
