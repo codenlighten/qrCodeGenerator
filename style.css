@@ -20,10 +20,12 @@ body {
 }
 input {
 	margin: 4px auto;
+	border-radius: 3px;
 }
 
 button {
 	margin: 4px auto;
+	border-radius: 3px;
 }
 
 #qrcode {
