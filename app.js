@@ -9,6 +9,7 @@ const getQrc = () => {
 	document.getElementById("download").style.display = "";
 	document.getElementById("submit").style.display = "none";
 	document.getElementById("retry").style.display = "";
+	document.getElementById("qrInfo").innerHTML = "";
 };
 
 let can = document.getElementById("qrcode");
