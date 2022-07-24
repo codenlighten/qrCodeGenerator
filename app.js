@@ -5,6 +5,7 @@ const getQrc = () => {
 		return;
 	}
 	new QRCode(document.getElementById("qrcode"), `${qrInfo}`);
+	document.getElementById("qrcode").style.display = "";
 	document.getElementById("download").style.display = "";
 	document.getElementById("submit").style.display = "none";
 	document.getElementById("retry").style.display = "";
